@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.sqlite3
+evidence/course-template.html
+evidence/course-rendered.html
+.tools/
+.firebase/
+firebase-debug.log
+firestore-debug.log

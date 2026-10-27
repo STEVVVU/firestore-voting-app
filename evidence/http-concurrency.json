@@ -1,0 +1,2755 @@
+{
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "cpu_count": 24,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "httpx": "0.28.1",
+  "workload": "Five batches per concurrency; ten unique users per batch; each posts TABS, repeats TABS, then conflicts with SPACES.",
+  "mode": "loopback Uvicorn, local synthetic identity and SQLite; not cloud",
+  "source_sha256": {
+    "app.py": "dec7e6a9934b3beb0be931096546f8cf3dcf8a6279eda1e47bc1e234a5fbcbb4",
+    "benchmark.py": "ed88322388fcbe1d252caf9e876fd18201f5e28268c61268c7202df58bc91d1d"
+  },
+  "runs": [
+    {
+      "concurrency": 1,
+      "repeat": 1,
+      "elapsed_ms": 1429.923499992583,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 29.74040000117384
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.611499988939613
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3276000099722296
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 16.391400014981627
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.2997000012546778
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.318100024946034
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 16.736899997340515
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.0486000101082027
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.0020000045187771
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 10.82609998411499
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.232799986610189
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 2.339900005608797
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 13.527300005080178
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.1871999886352569
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.02530000731349
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 8.130800008075312
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.208799978485331
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.1215000122319907
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 16.479499987326562
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.4270000101532787
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.2306999997235835
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 6.900600012158975
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.410199998645112
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.5153000131249428
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 15.193500003078952
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.2835999950766563
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.1001999955624342
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 6.381000013789162
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.124799979152158
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.1653999972622842
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 10,
+        "SPACES": 0
+      },
+      "durable_rows": 10,
+      "expected_rows": 10
+    },
+    {
+      "concurrency": 1,
+      "repeat": 2,
+      "elapsed_ms": 1491.5398000157438,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.6932999945711344
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.1956999951507896
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.0197999945376068
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 20.76489999308251
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.1473000049591064
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.058900001225993
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.949399994686246
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3897999888285995
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.1455999920144677
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 6.557300017448142
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 3.411300014704466
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.1540999985300004
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 13.89899998321198
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.2061000161338598
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 0.9507999930065125
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 26.395900000352412
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3404999917838722
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.0559999791439623
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 15.673099987907335
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.1509000032674521
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3072000001557171
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 27.18770000501536
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.8501000013202429
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.63130002329126
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.222099986393005
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.469400002155453
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.8326000135857612
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 28.850400005467236
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 3.5844999947585166
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.791099988622591
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 20,
+        "SPACES": 0
+      },
+      "durable_rows": 20,
+      "expected_rows": 20
+    },
+    {
+      "concurrency": 1,
+      "repeat": 3,
+      "elapsed_ms": 1664.5733999903314,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 30.90610000072047
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.9412999972701073
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.489599992055446
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 16.332300001522526
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.4468000154010952
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.6270999913103878
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 27.32970000943169
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3427999801933765
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.0665000008884817
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 25.984000007156283
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.9169999868609011
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 3.2436999899800867
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 16.27690001623705
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.043999993475154
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.5353999915532768
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 20.862000004854053
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.4688999799545854
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 2.3382999934256077
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 19.76000002468936
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.0431999873835593
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.2889000063296407
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 17.073499999241903
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.6540999931748956
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.338800007943064
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.596700015710667
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.9967000116594136
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.690899982349947
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 13.647900021169335
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.0246000203769654
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 4.17369999922812
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 30,
+        "SPACES": 0
+      },
+      "durable_rows": 30,
+      "expected_rows": 30
+    },
+    {
+      "concurrency": 1,
+      "repeat": 4,
+      "elapsed_ms": 1541.442999994615,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 13.493499980540946
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.2933000107295811
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 2.525999996578321
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.015300012426451
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.6164999979082495
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.4645999763160944
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 20.30699999886565
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.7316000012215227
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.6104000096675009
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 58.41979998513125
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3646000006701797
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 2.7725000109057873
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 13.914399984059855
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.4377000043168664
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.1715999862644821
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 11.87360001495108
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.2273000029381365
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 0.971500005107373
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 16.730800009099767
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.5983000048436224
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.362500013783574
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 14.990499999839813
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.4121999847702682
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3957000046502799
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 13.253399985842407
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.0670000046957284
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.034899993101135
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 26.020499994046986
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3024999934714288
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 3.225599997676909
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 40,
+        "SPACES": 0
+      },
+      "durable_rows": 40,
+      "expected_rows": 40
+    },
+    {
+      "concurrency": 1,
+      "repeat": 5,
+      "elapsed_ms": 1528.6360000027344,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 11.96689999778755
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.2601000091526657
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.6496000171173364
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 28.928899992024526
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.2670000141952187
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 2.1776999928988516
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 13.013599993428215
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.1413000174798071
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.8042000010609627
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 29.424100008327514
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.2076999992132187
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 5.876199982594699
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 11.864500003866851
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.871699991170317
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.529999979538843
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.8452000161632895
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.820300007238984
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.6188999870792031
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.585500017739832
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.7266000213567168
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.4604000025428832
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 10.35490000504069
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3580000086221844
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.076199987437576
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 16.34490001015365
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.119499997003004
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.830199995310977
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 27.788100007455796
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.8102000176440924
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.2556999863591045
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 50,
+        "SPACES": 0
+      },
+      "durable_rows": 50,
+      "expected_rows": 50
+    },
+    {
+      "concurrency": 4,
+      "repeat": 1,
+      "elapsed_ms": 902.9268000158481,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 41.69549999642186
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.6820000018924475
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 2.46540000080131
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 25.87909999419935
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 29.139199992641807
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 7.380900002317503
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 20.780299993930385
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.6490000125486404
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.655400003073737
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 63.83929998264648
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3378000003285706
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.360399997793138
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 28.82300000055693
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.7732999986037612
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.6095000028144568
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 24.106500000925735
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 4.893400007858872
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 32.038899982580915
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 6.5187999862246215
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 22.983600007137284
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.9856999861076474
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 11.296400014543906
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 18.27239998965524
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 2.271699981065467
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 24.95010002166964
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.7744999786373228
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3753999955952168
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 10.231699998257682
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 0.9978000016417354
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.182200008770451
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 60,
+        "SPACES": 0
+      },
+      "durable_rows": 60,
+      "expected_rows": 60
+    },
+    {
+      "concurrency": 4,
+      "repeat": 2,
+      "elapsed_ms": 881.4380999829154,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 20.85659999283962
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.4301000046543777
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.2877000262960792
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 38.563800015253946
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.6515000024810433
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 19.058900012169033
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 17.796500003896654
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.4056999934837222
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 2.2496999881695956
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 39.07389999949373
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3013000134378672
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.0177000076510012
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 29.58899998338893
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.7998999974224716
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 3.9066000026650727
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 15.110100008314475
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.6798000142443925
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.073099992936477
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 22.928699996555224
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.1749000113923103
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.5153999847825617
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 18.50240002386272
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.5383000136353076
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.483700005337596
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 15.773499995702878
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.553400001488626
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 14.825899997958913
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.313100009923801
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.1597999837249517
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3247000169940293
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 70,
+        "SPACES": 0
+      },
+      "durable_rows": 70,
+      "expected_rows": 70
+    },
+    {
+      "concurrency": 4,
+      "repeat": 3,
+      "elapsed_ms": 921.5524999890476,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 43.4403000108432
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.1730000260286033
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.0375000128988177
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 16.631300008157268
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3651000044774264
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.0392999975010753
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 11.139399983221665
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.424600020982325
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.6268000181298703
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 16.581200005020946
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 20.060000009834766
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 2.1066000044811517
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 19.79120000032708
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.4667999930679798
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3126000121701509
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 34.876699995948
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.0758000027853996
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3609000016003847
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 25.518100010231137
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 32.70389998215251
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.2863000156357884
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 15.178500005276874
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 18.006500002229586
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.885299978312105
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 29.723000014200807
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.0281000179238617
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.9983999955002218
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 18.473600008292124
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.733299985062331
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.2931000092066824
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 80,
+        "SPACES": 0
+      },
+      "durable_rows": 80,
+      "expected_rows": 80
+    },
+    {
+      "concurrency": 4,
+      "repeat": 4,
+      "elapsed_ms": 924.8058999946807,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 21.649700007401407
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 25.75319999596104
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3327999913599342
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 25.840199989033863
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.06229999801144
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.5423999866470695
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 60.12530002044514
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.4334000006783754
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3438000169117004
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 24.494899989804253
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.2291999883018434
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 26.533600001130253
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 21.030200005043298
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.667400007136166
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.416300015989691
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 21.50530001381412
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.2889999779872596
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.1621000012382865
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 15.06949999020435
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.36749999364838
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.2602000206243247
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 19.682700018165633
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.3873999996576458
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.4752999995835125
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 23.432300018612295
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.8811000045388937
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.4220000011846423
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 17.272099998081103
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.202800020109862
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3745000178460032
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 90,
+        "SPACES": 0
+      },
+      "durable_rows": 90,
+      "expected_rows": 90
+    },
+    {
+      "concurrency": 4,
+      "repeat": 5,
+      "elapsed_ms": 975.451600010274,
+      "events": [
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.872599991969764
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.07269997918047
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.880900003015995
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 10.938299994450063
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.8223999941255897
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.5805000148247927
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 17.781699978513643
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.571700006024912
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.5958999865688384
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 22.007199993822724
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.7425999976694584
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.5272999880835414
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 12.725700013106689
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.5575999859720469
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.3267000031191856
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.505099987611175
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.7293999844696373
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.6994999896269292
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 8.914300007745624
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.9993000023532659
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.4414000033866614
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 18.019800016190857
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.779000012902543
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 1.6976000042632222
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 10.668000002624467
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 2.1868000039830804
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 5.3490000136662275
+          }
+        ],
+        [
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 7.2610999923199415
+          },
+          {
+            "team": "TABS",
+            "status": 200,
+            "body": {
+              "status": "recorded"
+            },
+            "latency_ms": 1.9177999929524958
+          },
+          {
+            "team": "SPACES",
+            "status": 409,
+            "body": {
+              "detail": "A different vote is already recorded"
+            },
+            "latency_ms": 13.480399997206405
+          }
+        ]
+      ],
+      "failures": [],
+      "results_counts": {
+        "TABS": 100,
+        "SPACES": 0
+      },
+      "durable_rows": 100,
+      "expected_rows": 100
+    }
+  ]
+}
